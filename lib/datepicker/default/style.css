@@ -1,0 +1,325 @@
+.datepicker-container
+{
+    background-color: #b9c4f4;
+    font-family: tahoma, verdana, arial, sane;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+}
+
+.datepicker-year-container
+{
+    text-align: center;
+}
+
+.datepicker-year-arrow
+{
+    text-decoration: none;
+    background-color: #6f6f6f;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.datepicker-year
+{
+    background-color: #6f6f6f;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.datepicker-months-container
+{
+    cursor: pointer;
+}
+
+.datepicker-month-name
+{
+    background-color: #9f9f9f;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.7em;
+    width: 16%;
+}
+
+.datepicker-month-name-hover
+{
+    background-color: #ffcccc;
+    color: #000000;
+    text-align: center;
+    font-size: 0.7em;
+    width: 16%;
+}
+
+.datepicker-month-name-selected
+{
+    background-color: #ccffcc;
+    color: #000000;
+    text-align: center;
+    font-size: 0.7em;
+    width: 16%;
+}
+
+.datepicker-day-names-container
+{
+}
+
+.datepicker-day-names
+{
+    background-color: #ffcc33;
+    color: #000000;
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: bold;
+    height: 14%;
+    width: 14%;
+}
+
+.datepicker-day-currentMonth-weekday
+{
+    background-color: #e8e8e8;
+    color: black;
+    text-align: center;
+    font-size: 0.7em;
+    height: 14%;
+}
+
+.datepicker-day-currentMonth-weekday-preselected
+{
+    background-color: #cc6666;
+    color: ffffff;
+    text-align: center;
+    font-size: 0.7em;
+    height: 14%;
+}
+
+.datepicker-day-currentMonth-weekday-hover
+{
+    cursor: pointer;
+    background-color: #ffcccc;
+    color: black;
+    text-align: center;
+    font-size: 0.7em;
+    height: 14%;
+}
+
+.datepicker-day-currentMonth-weekend
+{
+    background-color: #d8d8d8;
+    color: black;
+    text-align: center;
+    font-size: 0.7em;
+    height: 14%;
+}
+
+.datepicker-day-currentMonth-weekend-preselected
+{
+    background-color: #cc6666;
+    color: ffffff;
+    text-align: center;
+    font-size: 0.7em;
+    height: 14%;
+}
+
+.datepicker-day-currentMonth-weekend-hover
+{
+    cursor: pointer;
+    background-color: #ffcccc;
+    color: black;
+    text-align: center;
+    font-size: 0.7em;
+    height: 14%;
+}
+
+.datepicker-day-currentMonth-currentDay-weekday
+{
+    background-color: #e8e8e8;
+    color: red;
+    text-align: center;
+    font-size: 0.7em;
+    height: 14%;
+}
+
+.datepicker-day-currentMonth-currentDay-weekday-preselected
+{
+    background-color: #cc6666;
+    color: ffffff;
+    text-align: center;
+    font-size: 0.7em;
+    height: 14%;
+}
+
+.datepicker-day-currentMonth-currentDay-weekday-hover
+{
+    cursor: pointer;
+    background-color: #ffcccc;
+    color: red;
+    text-align: center;
+    font-size: 0.7em;
+    height: 14%;
+}
+
+.datepicker-day-currentMonth-currentDay-weekend
+{
+    background-color: #d8d8d8;
+    color: red;
+    text-align: center;
+    font-size: 0.7em;
+    height: 14%;
+}
+
+.datepicker-day-currentMonth-currentDay-weekend-preselected
+{
+    background-color: #cc6666;
+    color: ffffff;
+    text-align: center;
+    font-size: 0.7em;
+    height: 14%;
+}
+
+.datepicker-day-currentMonth-currentDay-weekend-hover
+{
+    cursor: pointer;
+    background-color: #ffcccc;
+    color: red;
+    text-align: center;
+    font-size: 0.7em;
+    height: 14%;
+}
+
+.datepicker-day-previousMonth-weekday
+{
+    background-color: #efefef;
+    color: #979797;
+    text-align: center;
+    font-size: 0.6em;
+    height: 14%;
+}
+
+.datepicker-day-previousMonth-weekday-preselected
+{
+    background-color: #cc6666;
+    color: ffffff;
+    text-align: center;
+    font-size: 0.7em;
+    height: 14%;
+}
+
+.datepicker-day-previousMonth-weekday-hover
+{
+    cursor: pointer;
+    background-color: #ffcccc;
+    color: #979797;
+    text-align: center;
+    font-size: 0.6em;
+    height: 14%;
+}
+
+.datepicker-day-previousMonth-weekend
+{
+    background-color: #efefef;
+    color: #979797;
+    text-align: center;
+    font-size: 0.6em;
+    height: 14%;
+}
+
+.datepicker-day-previousMonth-weekend-preselected
+{
+    background-color: #cc6666;
+    color: ffffff;
+    text-align: center;
+    font-size: 0.7em;
+    height: 14%;
+}
+
+.datepicker-day-previousMonth-weekend-hover
+{
+    cursor: pointer;
+    background-color: #ffcccc;
+    color: #979797;
+    text-align: center;
+    font-size: 0.6em;
+    height: 14%;
+}
+
+.datepicker-day-nextMonth-weekday
+{
+    background-color: #efefef;
+    color: #979797;
+    text-align: center;
+    font-size: 0.6em;
+    height: 14%;
+}
+
+.datepicker-day-nextMonth-weekday-preselected
+{
+    background-color: #cc6666;
+    color: ffffff;
+    text-align: center;
+    font-size: 0.7em;
+    height: 14%;
+}
+
+.datepicker-day-nextMonth-weekday-hover
+{
+    cursor: pointer;
+    background-color: #ffcccc;
+    color: #979797;
+    text-align: center;
+    font-size: 0.6em;
+    height: 14%;
+}
+
+.datepicker-day-nextMonth-weekend
+{
+    background-color: #efefef;
+    color: #979797;
+    text-align: center;
+    font-size: 0.6em;
+    height: 14%;
+}
+
+.datepicker-day-nextMonth-weekend-preselected
+{
+    background-color: #cc6666;
+    color: ffffff;
+    text-align: center;
+    font-size: 0.7em;
+    height: 14%;
+}
+
+.datepicker-day-nextMonth-weekend-hover
+{
+    cursor: pointer;
+    background-color: #ffcccc;
+    color: #979797;
+    text-align: center;
+    font-size: 0.6em;
+    height: 14%;
+}
+
+.datepicker-cleardate-container
+{
+    background-color: #767676;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.7em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.datepicker-cleardate-container-hover
+{
+    background-color: #ffcccc;
+    color: #000000;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.datepicker-cleardate
+{
+}

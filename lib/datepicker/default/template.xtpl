@@ -1,0 +1,158 @@
+<!-- BEGIN: main -->
+<html>
+    <head>
+        <title>{languageStrings.strLang_windowTitle}</title>
+        <link rel="stylesheet" href="../templates/{PHP._POST.template}/style.css" type="text/css">
+    </head>
+    <body style="margin:0px">
+        <form method="post" name="datepicker" action="{PHP._SERVER.SCRIPT_NAME}">
+        <input type="hidden" name="preselectedDate" value="{PHP._POST.preselectedDate}" />
+        <input type="hidden" name="month" value="{PHP._POST.month}" />
+        <input type="hidden" name="year" value="{PHP._POST.year}" />
+        <input type="hidden" name="controlName" value="{PHP._POST.controlName}" />
+        <input type="hidden" name="dateFormat" value="{PHP._POST.dateFormat}" />
+        <input type="hidden" name="firstDayOfWeek" value="{PHP._POST.firstDayOfWeek}" />
+        <input type="hidden" name="clearDateButton" value="{PHP._POST.clearDateButton}" />
+        <input type="hidden" name="language" value="{PHP._POST.language}" />
+        <input type="hidden" name="template" value="{PHP._POST.template}" />
+        <table cellspacing="0" cellpadding="0" class="datepicker-container">
+            <tr>
+                <td>
+                    <table cellspacing="1" cellpadding="0" style="width:100%;height:100%;" class="datepicker-year-container">
+                        <tr>
+                            <td class="datepicker-year">
+                                <a href="javascript:document.datepicker.year.value = parseInt(document.datepicker.year.value) - 1; document.datepicker.submit()" class="datepicker-year-arrow">&laquo;</a>
+                                &nbsp;{PHP._POST.year}&nbsp;
+                                <a href="javascript:document.datepicker.year.value = parseInt(document.datepicker.year.value) + 1; document.datepicker.submit()" class="datepicker-year-arrow">&raquo;</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table cellspacing="1" cellpadding="0" style="width:100%;height:100%;" class="datepicker-months-container">
+                        <!-- BEGIN: months_names_row -->
+                        <tr>
+                        
+                            <!-- BEGIN: months_names_item -->
+                            <td
+
+                            <!-- BEGIN: month_name_selected -->
+                            class="datepicker-month-name-selected">{monthLiteral}</td>
+                            <!-- END: month_name_selected -->
+                            
+                            <!-- BEGIN: month_name -->
+                            class="datepicker-month-name" onclick="document.datepicker.month.value = '{monthNumeric}';document.datepicker.submit()" onmouseover="this.className = 'datepicker-month-name-hover'" onmouseout="this.className = 'datepicker-month-name'">{monthLiteral}</td>
+                            <!-- END: month_name -->
+
+                            </td>
+                            <!-- END: months_names_item -->
+
+                        </tr>
+                        <!-- END: months_names_row -->
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table cellspacing="1" cellpadding="0" style="width:100%;height:100%;" class="datepicker-day-names-container">
+                        <tr>
+                            <!-- BEGIN: day_names -->
+                            <td class="datepicker-day-names">{dayName}</td>
+                            <!-- END: day_names -->
+                        </tr>
+                        <tr>
+                        
+                            <!-- BEGIN: days -->
+                            
+                                <!-- BEGIN: previousMonth_weekday -->
+                                <td class="datepicker-day-previousMonth-weekday" onmouseover="this.className = 'datepicker-day-previousMonth-weekday-hover'" onmouseout="this.className = 'datepicker-day-previousMonth-weekday'" onclick="javascript:document.datepicker.month.value = parseInt(document.datepicker.month.value) - 1; document.datepicker.submit()">{day}</td>
+                                <!-- END: previousMonth_weekday -->
+
+                                <!-- BEGIN: previousMonth_weekday_preselected -->
+                                <td class="datepicker-day-previousMonth-weekday-preselected" onmouseover="this.className = 'datepicker-day-previousMonth-weekday-hover'" onmouseout="this.className = 'datepicker-day-previousMonth-weekday-preselected'" onclick="javascript:document.datepicker.month.value = parseInt(document.datepicker.month.value) - 1; document.datepicker.submit()">{day}</td>
+                                <!-- END: previousMonth_weekday_preselected -->
+
+                                <!-- BEGIN: previousMonth_weekend -->
+                                <td class="datepicker-day-previousMonth-weekend" onmouseover="this.className = 'datepicker-day-previousMonth-weekend-hover'" onmouseout="this.className = 'datepicker-day-previousMonth-weekend'" onclick="javascript:document.datepicker.month.value = parseInt(document.datepicker.month.value) - 1; document.datepicker.submit()">{day}</td>
+                                <!-- END: previousMonth_weekend -->
+
+                                <!-- BEGIN: previousMonth_weekend_preselected -->
+                                <td class="datepicker-day-previousMonth-weekend-preselected" onmouseover="this.className = 'datepicker-day-previousMonth-weekend-hover'" onmouseout="this.className = 'datepicker-day-previousMonth-weekend-preselected'" onclick="javascript:document.datepicker.month.value = parseInt(document.datepicker.month.value) - 1; document.datepicker.submit()">{day}</td>
+                                <!-- END: previousMonth_weekend_preselected -->
+
+                                <!-- BEGIN: currentMonth_weekday -->
+                                <td class="datepicker-day-currentMonth-weekday" onmouseover="this.className = 'datepicker-day-currentMonth-weekday-hover'" onmouseout="this.className = 'datepicker-day-currentMonth-weekday'" onclick="javascript:opener.document.getElementById('{PHP._POST.controlName}').value = '{returnValue}'; window.close()">{day}</td>
+                                <!-- END: currentMonth_weekday -->
+
+                                <!-- BEGIN: currentMonth_weekday_preselected -->
+                                <td class="datepicker-day-currentMonth-weekday-preselected" onmouseover="this.className = 'datepicker-day-currentMonth-weekday-hover'" onmouseout="this.className = 'datepicker-day-currentMonth-weekday-preselected'" onclick="javascript:document.datepicker.month.value = parseInt(document.datepicker.month.value) - 1; document.datepicker.submit()">{day}</td>
+                                <!-- END: currentMonth_weekday_preselected -->
+
+                                <!-- BEGIN: currentMonth_currentDay_weekday -->
+                                <td class="datepicker-day-currentMonth-currentDay-weekday" onmouseover="this.className = 'datepicker-day-currentMonth-currentDay-weekday-hover'" onmouseout="this.className = 'datepicker-day-currentMonth-currentDay-weekday'" onclick="javascript:opener.document.getElementById('{PHP._POST.controlName}').value = '{returnValue}'; window.close()">{day}</td>
+                                <!-- END: currentMonth_currentDay_weekday -->
+
+                                <!-- BEGIN: currentMonth_currentDay_weekday_preselected -->
+                                <td class="datepicker-day-currentMonth-currentDay-weekday-preselected" onmouseover="this.className = 'datepicker-day-currentMonth-currentDay-weekday-hover'" onmouseout="this.className = 'datepicker-day-currentMonth-currentDay-weekday-preselected'" onclick="javascript:opener.document.getElementById('{PHP._POST.controlName}').value = '{returnValue}'; window.close()">{day}</td>
+                                <!-- END: currentMonth_currentDay_weekday_preselected -->
+
+                                <!-- BEGIN: currentMonth_weekend -->
+                                <td class="datepicker-day-currentMonth-weekend" onmouseover="this.className = 'datepicker-day-currentMonth-weekend-hover'" onmouseout="this.className = 'datepicker-day-currentMonth-weekend'" onclick="javascript:opener.document.getElementById('{PHP._POST.controlName}').value = '{returnValue}'; window.close()">{day}</td>
+                                <!-- END: currentMonth_weekend -->
+
+                                <!-- BEGIN: currentMonth_weekend_preselected -->
+                                <td class="datepicker-day-currentMonth-weekend-preselected" onmouseover="this.className = 'datepicker-day-currentMonth-weekend-hover'" onmouseout="this.className = 'datepicker-day-currentMonth-weekend-preselected'" onclick="javascript:opener.document.getElementById('{PHP._POST.controlName}').value = '{returnValue}'; window.close()">{day}</td>
+                                <!-- END: currentMonth_weekend_preselected -->
+
+                                <!-- BEGIN: currentMonth_currentDay_weekend -->
+                                <td class="datepicker-day-currentMonth-currentDay-weekend"onmouseover="this.className = 'datepicker-day-currentMonth-currentDay-weekend-hover'" onmouseout="this.className = 'datepicker-day-currentMonth-currentDay-weekend'" onclick="javascript:opener.document.getElementById('{PHP._POST.controlName}').value = '{returnValue}'; window.close()">{day}</td>
+                                <!-- END: currentMonth_currentDay_weekend -->
+
+                                <!-- BEGIN: currentMonth_currentDay_weekend_preselected -->
+                                <td class="datepicker-day-currentMonth-currentDay-weekend-preselected"onmouseover="this.className = 'datepicker-day-currentMonth-currentDay-weekend-hover'" onmouseout="this.className = 'datepicker-day-currentMonth-currentDay-weekend-preselected'" onclick="javascript:opener.document.getElementById('{PHP._POST.controlName}').value = '{returnValue}'; window.close()">{day}</td>
+                                <!-- END: currentMonth_currentDay_weekend_preselected -->
+
+                                <!-- BEGIN: nextMonth_weekday -->
+                                <td class="datepicker-day-nextMonth-weekday" onmouseover="this.className = 'datepicker-day-nextMonth-weekday-hover'" onmouseout="this.className = 'datepicker-day-nextMonth-weekday'" onclick="javascript:document.datepicker.month.value = parseInt(document.datepicker.month.value) + 1; document.datepicker.submit()">{day}</td>
+                                <!-- END: nextMonth_weekday -->
+
+                                <!-- BEGIN: nextMonth_weekday_preselected -->
+                                <td class="datepicker-day-nextMonth-weekday-preselected" onmouseover="this.className = 'datepicker-day-nextMonth-weekday-hover'" onmouseout="this.className = 'datepicker-day-nextMonth-weekday-preselected'" onclick="javascript:document.datepicker.month.value = parseInt(document.datepicker.month.value) + 1; document.datepicker.submit()">{day}</td>
+                                <!-- END: nextMonth_weekday_preselected -->
+
+                                <!-- BEGIN: nextMonth_weekend -->
+                                <td class="datepicker-day-nextMonth-weekend" onmouseover="this.className = 'datepicker-day-nextMonth-weekend-hover'" onmouseout="this.className = 'datepicker-day-nextMonth-weekend'" onclick="javascript:document.datepicker.month.value = parseInt(document.datepicker.month.value) + 1; document.datepicker.submit()">{day}</td>
+                                <!-- END: nextMonth_weekend -->
+
+                                <!-- BEGIN: nextMonth_weekend_preselected -->
+                                <td class="datepicker-day-nextMonth-weekend-preselected" onmouseover="this.className = 'datepicker-day-nextMonth-weekend-hover'" onmouseout="this.className = 'datepicker-day-nextMonth-weekend-preselected'" onclick="javascript:document.datepicker.month.value = parseInt(document.datepicker.month.value) + 1; document.datepicker.submit()">{day}</td>
+                                <!-- END: nextMonth_weekend_preselected -->
+
+                                <!-- BEGIN: new_row -->
+                                </tr><tr>
+                                <!-- END: new_row -->
+
+                                <!-- BEGIN: end_row -->
+                                </tr>
+                                <!-- END: end_row -->
+
+                            <!-- END: days -->
+                            
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- BEGIN: clear_date_button -->
+            <tr>
+                <td class="datepicker-cleardate-container" onclick="javascript:opener.document.getElementById('{PHP._POST.controlName}').value = ''; window.close()" onmouseover="this.className = 'datepicker-cleardate-container-hover'" onmouseout="this.className = 'datepicker-cleardate-container'">
+                    <span class="datepicker-cleardate">{languageStrings.strLang_clearDate}</span>
+                </td>
+            </tr>
+            <!-- END: clear_date_button -->
+        </table>
+        </form>
+    </body>
+</html>
+<!-- END: main -->

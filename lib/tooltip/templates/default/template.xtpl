@@ -1,0 +1,29 @@
+<!-- BEGIN: main -->
+
+    <!-- BEGIN: init -->
+<!--
+/var/www/html/onelotus/cic/admin/lib/tooltip/
+-->
+
+    <script language="javascript" type="text/javascript" src="../includes/tooltips.js"></script>
+    <link rel="stylesheet" href="../templates/{template}/style.css" type="text/css">
+<!--
+    <script language="javascript" type="text/javascript" src="/var/www/html/onelotus/cic/admin/lib/tooltip/includes/tooltips.js"></script>
+    <link rel="stylesheet" href="/var/www/html/onelotus/cic/admin/lib/tooltip/templates/{template}/style.css" type="text/css">
+-->
+    <script language="JavaScript" type="text/javascript">
+        {JavaScriptSettings}
+    </script>
+    <!-- END: init -->  
+    
+    <!-- EDIT ONLY FROM HERE!!! -->
+    
+    <!-- BEGIN: tooltip -->
+    <div class="PHPTooltips_Main">
+        <b>XXXXXXXXXXXXXXXXXXXXXXXX!</b>
+        <br /><br />
+        {content}
+    </div>
+    <!-- END: tooltip -->
+    
+<!-- END: main -->

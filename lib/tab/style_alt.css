@@ -1,0 +1,56 @@
+/* CSS Document */
+	body{
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:x-small;
+		color:#000066;
+	}
+
+	a{text-decoration:none;color:#000066;}
+	a:hover{text-decoration:underline;color:#000066;}
+
+	.navOn{
+	background-color: #000066;
+	color:#ffffff;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:x-small;
+	FONT-VARIANT: small-caps;
+	text-align: center;
+	}
+
+	.navChild{
+	background-color:#000066;
+	color:#ffffff;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:x-small;
+	FONT-VARIANT: small-caps;
+	}
+
+	.navOff{
+	background-color:#00FFCC;
+	color:#000000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:x-small;
+	FONT-VARIANT: small-caps;
+	text-align: center;
+	}
+
+	.finePrint{
+		font-size:x-small;
+	}
+
+
+.childMenu{
+	background-color:#000066;
+	color:#ffffff;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:x-small;
+	padding:4px;
+	}
+
+.childMenu:hover{
+	background-color:#000066;
+	color:#ffffff;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:x-small;
+	padding:4px;
+	}
